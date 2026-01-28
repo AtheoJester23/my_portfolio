@@ -8,15 +8,27 @@ html{
     scroll-behavior: smooth;
 }
 
-.cursor{
+* {
+    cursor: none !important;
+}
+
+input,
+textarea,
+select {
+    cursor: text !important;
+}
+
+.cursor {
     width: 20px;
     height: 20px;
-    background-color: black;
-    position:fixed;
+    background-color: white;
+    position: fixed;
     border-radius: 50%;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 9999;
     pointer-events: none;
+
+    mix-blend-mode: difference; /* 👈 magic */
 }
 

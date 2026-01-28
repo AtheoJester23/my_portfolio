@@ -40,7 +40,7 @@ const Navbar = () => {
                     <motion.a
                         initial="initial"
                         whileHover="hovered"
-                        className='relative block overflow-hidden whitespace-nowrap font-bold cursor-pointer'
+                        className='relative block overflow-hidden whitespace-nowrap font-bold'
                         style={{
                             lineHeight: 1.35
                         }}
@@ -85,7 +85,7 @@ const Navbar = () => {
                     <motion.a
                         initial="initial"
                         whileHover="hovered"
-                        className='relative block overflow-hidden whitespace-nowrap font-bold cursor-pointer'
+                        className='relative block overflow-hidden whitespace-nowrap font-bold'
                         style={{
                             lineHeight: 1.35
                         }}
@@ -128,7 +128,7 @@ const Navbar = () => {
                     <motion.a
                         initial="initial"
                         whileHover="hovered"
-                        className='relative block overflow-hidden whitespace-nowrap font-bold cursor-pointer'
+                        className='relative block overflow-hidden whitespace-nowrap font-bold'
                         style={{
                             lineHeight: 1.35
                         }}
