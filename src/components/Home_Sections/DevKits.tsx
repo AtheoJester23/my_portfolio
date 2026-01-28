@@ -1,7 +1,9 @@
+import LogoMarquee from "../LogoMarquee";
+
 const DevKits = () => {
     return (  
-        <div className="bg-[rgb(229,231,235)]  h-[100vh] flex p-20 justify-center items-center">
-            <h1 className="text-5xl font-bold">Development toolkits</h1>
+        <div className="bg-[rgb(229,231,235)] flex max-sm:p-10 p-20 overflow-x-hidden">
+            <LogoMarquee/>
         </div>
     );
 }

@@ -18,33 +18,28 @@ const Home = () => {
         <Navbar/>
         <Cursor/>
         <AnimatePresence>
-            <section id="intro">
-              <Introduction/>
-            </section>
+          <div>
+              <section id="intro">
+                <Introduction/>
+              </section>
 
-            <section id="about">
-              <AboutMe/>
-            </section>
+              <section id="about">
+                <AboutMe/>
+              </section>
 
-            <section id="backgrounds(Education & internship)">
-              <Backgrounds/>
-            </section>
-
-            <section id="projects">
-              <Projects/>
-            </section>
-
-            <section id="devKits">
-              <DevKits/>
-            </section>
-
-            <section id="contact">
-              <Contact/>
-            </section>
-            
+              <section id="devKits">
+                <DevKits/>
+              </section>
+              
+              <section id="projects">
+                <Projects/>
+              </section>
 
 
-            
+              <section id="contact">
+                <Contact/>
+              </section>
+          </div>
 
         </AnimatePresence>
       </motion.div>

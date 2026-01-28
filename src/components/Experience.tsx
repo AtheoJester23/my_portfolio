@@ -23,10 +23,10 @@ const Experience = ({className, alt, src, start, end}: {className?: string, alt?
             ref={ref}
             className={className}
         >
-            <h1 className="text-5xl font-bold text-red-500">Experience: </h1>
-            <p className="text-2xl font-bol">Simplevia Technologies Inc.</p>
-            <p className="text-xl">Front-end Developer</p>
-            <p className="text-xl">2021 - 2025</p>
+            <h1 className="max-sm:text-xl text-5xl font-bold text-red-500">Experience: </h1>
+            <p className="max-sm:text-[12px] text-2xl font-bold">Simplevia Technologies Inc.</p>
+            <p className="max-sm:text-[12px] text-xl">Front-end Developer</p>
+            <p className="max-sm:text-[12px]text-xl">2021 - 2025</p>
         </motion.div>
     )
 }

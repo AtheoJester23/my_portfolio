@@ -23,10 +23,10 @@ const Education = ({className, alt, src, start, end}: {className?: string, alt?:
             ref={ref}
             className={className}
         >
-            <h1 className="text-5xl font-bold text-red-500">Education</h1>
-            <p className="text-2xl font-bol">Bulacan State University - Sarmiento Campus</p>
-            <p className="text-xl">Bachelor of Science in Information Technology</p>
-            <p className="text-xl">2021 - 2025</p>
+            <h1 className="max-sm:text-2xl text-5xl font-bold text-red-500">Education</h1>
+            <p className="max-sm:text-[12px] text-2xl font-bold">Bulacan State University - Sarmiento Campus</p>
+            <p className="max-sm:text-[12px] text-xl">Bachelor of Science in Information Technology</p>
+            <p className="max-sm:text-[11px] text-xl">2021 - 2025</p>
         </motion.div>
     )
 }

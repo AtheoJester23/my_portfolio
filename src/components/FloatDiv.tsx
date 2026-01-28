@@ -23,12 +23,12 @@ const FloatImg = ({className, alt, src, start, end}: {className?: string, alt?: 
             ref={ref}
             className={className}
         >
-            <h1 className='text-5xl font-bold text-red-500'>Info:</h1>
-            <p className="max-sm:text-[14px] text-2xl"><strong>Name:</strong> Atheo Jester S. Baltazar</p>
-            <p className="max-sm:text-[14px] text-2xl"><strong>Email:</strong> atheojester@gmail.com</p>
-            <p className="max-sm:text-[14px] text-2xl"><strong>Age: </strong>23</p>
-            <p className="max-sm:text-[14px] text-2xl"><strong>From: </strong>Bulacan, Philippines</p>
-            <button className="max-sm:text-[14px] bg-[rgb(23,23,23)] text-white font-bold max-sm:p-2 p-5 rounded w-full cursor-pointer text-2xl">Download CV</button>
+            <h1 className='max-sm:text-xl text-5xl font-bold text-red-500'>Info:</h1>
+            <p className="max-sm:text-[11px] text-2xl"><strong>Name:</strong> Atheo Jester S. Baltazar</p>
+            <p className="max-sm:text-[11px] text-2xl"><strong>Email:</strong> atheojester@gmail.com</p>
+            <p className="max-sm:text-[11px] text-2xl"><strong>Age: </strong>23</p>
+            <p className="max-sm:text-[11px] text-2xl"><strong>From: </strong>Bulacan, Philippines</p>
+            <button className="max-sm:text-[11px] bg-[rgb(23,23,23)] text-white font-bold max-sm:p-2 p-5 rounded w-full cursor-pointer text-2xl mt-2">Download CV</button>
         </motion.div>
     )
 }
