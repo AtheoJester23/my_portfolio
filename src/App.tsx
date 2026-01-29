@@ -5,8 +5,9 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
-import { Carousel } from './pages/Test';
+import { Carousel } from './pages/Carousel';
 import Cursor from './components/cursor';
+import Test from './pages/Test';
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -26,7 +27,7 @@ function App() {
               <Home/>
             }
           />
-          <Route path='/test' element={<Carousel/>}/>
+          <Route path='/test' element={<Test/>}/>
         </Routes>
       </BrowserRouter>
     </>
