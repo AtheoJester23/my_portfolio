@@ -47,3 +47,16 @@ select {
         rgba(0,0,0,0)
     );
 }
+
+.iconLinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+.theIcon{
+    text-decoration: none;
+    color: #fceeb8;
+    font-size: 3rem;
+    transition: transform .15s ease;
+}
