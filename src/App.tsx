@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
-import Test from './pages/Test';
+import { Carousel } from './pages/Test';
 import Cursor from './components/cursor';
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
               <Home/>
             }
           />
-          <Route path='/test' element={<Test/>}/>
+          <Route path='/test' element={<Carousel/>}/>
         </Routes>
       </BrowserRouter>
     </>

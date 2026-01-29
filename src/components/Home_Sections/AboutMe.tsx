@@ -24,7 +24,9 @@ const AboutMe = () => {
 
     return (  
         <div className="max-sm:p-5 p-20 h-[100vh] bg-[rgb(8,8,8)] relative" id="about"
-            style={{height: `calc(${sectionHeight}px + 80vh)`}}
+            style={{
+                height: `calc(${sectionHeight}px + 80vh)`
+            }}
         >
             <motion.h1 
                 className="font-bold max-sm:text-[24px] text-5xl text-white text-center p-10 mb-8"

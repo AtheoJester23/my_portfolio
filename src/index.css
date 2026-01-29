@@ -4,6 +4,12 @@
     font-family: "Playfair Display", serif;
 }
 
+@layer base {
+  body {
+    @apply m-0;
+  }
+}
+
 html{
     scroll-behavior: smooth;
 }

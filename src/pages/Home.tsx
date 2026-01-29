@@ -4,7 +4,7 @@ import { ReactLenis } from 'lenis/react'
 import Cursor from "../components/cursor";
 import AboutMe from "../components/Home_Sections/AboutMe";
 import Introduction from "../components/Home_Sections/Introduction";
-import Projects from "../components/Home_Sections/Projects";
+import { Projects } from "../components/Home_Sections/Projects";
 import Backgrounds from "../components/Home_Sections/Background";
 import DevKits from "../components/Home_Sections/DevKits";
 import Contact from "../components/Home_Sections/Contact";
