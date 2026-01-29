@@ -1,6 +1,7 @@
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 import Cursor from "../components/cursor";
 import { motion, useMotionValue, useMotionValueEvent } from "framer-motion";
+import { img } from "framer-motion/client";
 
 const imgs = [
     "/slide1.png",
@@ -15,7 +16,8 @@ const SPRING_OPTIONS = {
     stiffness: 400,
     damping: 50
 } as const
-
+const ONE_SECOND = 1000;
+const AUTO_DELAY = ONE_SECOND * 5;
 
 export const Carousel = () => {
 
@@ -32,6 +34,23 @@ export const Carousel = () => {
             dragXProgress.set(0)
         }
     })
+
+    useEffect(() => {
+        const intervalRef = setInterval(() => {
+            const x = dragXProgress.get()
+
+            if(x === 0){
+                setImgIndex(prev => {
+                    if(prev === imgs.length - 1){
+                        return 0
+                    }
+                    return prev + 1;
+                })
+            }
+        }, AUTO_DELAY) 
+    
+        return () => clearInterval(intervalRef)
+    }, [])
 
     const onDragStart = () => {
         setDrangging(true)
