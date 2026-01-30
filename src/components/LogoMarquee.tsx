@@ -24,7 +24,7 @@ const logos = [
 export default function LogoMarquee() {
     return (
         <div className="container mx-auto">
-            <div className="flex blurSides">
+            <div className="flex blurSides border border-gray-300">
                 
                 <motion.div className="flex flex-shrink-0"
                     initial={{x: 0}}

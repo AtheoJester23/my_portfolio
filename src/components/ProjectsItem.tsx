@@ -40,18 +40,18 @@ export const ProjectItem = ({title, desc, img}: {title: string, desc: string, im
                 rotateY,
                 transformStyle: "preserve-3d",
             }}
-            className='shadow-lg relative h-96 w-72 rounded-xl bg-[rgb(244,244,244,0.3)]'
+            className='shadow-lg relative max-sm:h-51 max-sm:w-40 h-96 w-72 rounded-xl bg-[rgb(244,244,244,0.3)]'
         >
             <div 
                 style={{
                     transform: "translateZ(75px)",
                     transformStyle: "preserve-3d"
                 }}
-                className='absolute p-5 inset-4 flex flex-col gap-2 rounded-xl bg-white shadow-lg'
+                className='absolute max-sm:p-2 p-5 max-sm:inset-2 inset-4 flex flex-col gap-2 rounded-xl bg-white shadow-lg'
             >
                 <div className=''>
-                    <h1 className='text-xl bg-white rounded-xl font-bold text-center'>{title}</h1>
-                    <p className='text-center'>{desc}</p>
+                    <h1 className='max-sm:text-[11px] text-xl bg-white rounded-xl font-bold max-sm:text-left text-center'>{title}</h1>
+                    <p className='max-sm:text-[9px] text-center'>{desc}</p>
                 </div>
 
                 <img src={img} alt="" className='rounded-b-lg border border-gray-300'/>

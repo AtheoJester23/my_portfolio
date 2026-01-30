@@ -4,9 +4,9 @@ import { ProjectItem } from "../ProjectsItem";
 export const Projects = () => {
     return (  
         <div className="bg-[rgb(229,231,235)] pb-10">
+            <h1 className="max-sm:text-2xl text-5xl text-center font-bold mb-10">Projects</h1>
             <Carousel/>
-            <h1 className="text-5xl text-center font-bold my-10">Other projects</h1>
-            <div className="grid grid-cols-4 gap-10">
+            <div className="grid max-sm:grid-cols-2 grid-cols-4 max-sm:gap-x-5 gap-10 max-sm:px-5 p-10">
                 <div className="grid place-items-center">
                     <ProjectItem title="GPS Device" desc="GPS Device I made for our thesis" img="/p11.png"/>
                 </div>

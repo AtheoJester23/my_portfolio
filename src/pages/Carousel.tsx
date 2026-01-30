@@ -67,7 +67,7 @@ export const Carousel = () => {
 
     return (  
         <div className="flex flex-col h-auto">
-            <div className="flex overflow-hidden w-full h-auto">
+            <div className="flex overflow-hidden w-full h-auto ">
                 {imgs.map((item,index) => (
                     <motion.div 
                         style={{
