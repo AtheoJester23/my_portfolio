@@ -2,9 +2,9 @@ import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 import { motion, useMotionValue, useMotionValueEvent } from "framer-motion";
 
 const imgs = [
-    "/slide1.png",
-    "/slide2.png",
-    "/slide3.png",
+    {img: '/slide1.png', link: 'https://atheojester23.github.io/GPSPetTrack_Download_WebPage/'},
+    {img: '/slide2.png', link: 'https://selfdevprog.vercel.app/'},
+    {img: '/slide3.png', link: 'https://typetype-ten.vercel.app/'},
 ]
 
 const DRAG_BUFFER = 50
@@ -87,7 +87,7 @@ export const Carousel = () => {
                         onDragEnd={onDragEnd}
                         className="shrink-0 h-auto w-full bg-gray-500"
                     >
-                        <img src={item} draggable={false} alt="" className="w-full h-full object-contain"/>
+                        <img src={item.img} draggable={false} alt="" className="w-full h-full object-contain"/>
                     </motion.div>
                 ))}
             </div>
@@ -104,7 +104,7 @@ const Dots = ({imgIndex, setImgIndex}: {imgIndex: number, setImgIndex: Dispatch<
                     <button 
                         onClick={() => setImgIndex(index)} 
                         key={index}
-                        className={`h-3 w-3 rounded-full transition-colors ${index == imgIndex ? "bg-[rgb(8,8,8)]" : "bg-neutral-500"}`}
+                        className={`max-sm:h-1 max-sm:w-1 h-3 w-3 rounded-full transition-colors ${index == imgIndex ? "bg-[rgb(8,8,8)]" : "bg-neutral-500"}`}
                     />
                 ) 
             })}

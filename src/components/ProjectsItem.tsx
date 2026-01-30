@@ -1,6 +1,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
-export const ProjectItem = ({title, desc, img}: {title: string, desc: string, img: string}) => {
+export const ProjectItem = ({title, desc, img, link}: {title: string, desc: string, img: string, link: string}) => {
     const x = useMotionValue(0)
     const y = useMotionValue(0)
     
@@ -32,30 +33,32 @@ export const ProjectItem = ({title, desc, img}: {title: string, desc: string, im
     }
 
     return ( 
-        <motion.div
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            style={{
-                rotateX,
-                rotateY,
-                transformStyle: "preserve-3d",
-            }}
-            className='shadow-lg relative max-sm:h-51 max-sm:w-40 h-96 w-72 rounded-xl bg-[rgb(244,244,244,0.3)]'
-        >
-            <div 
+        <Link to={link} target='_blank'>
+            <motion.div
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
                 style={{
-                    transform: "translateZ(75px)",
-                    transformStyle: "preserve-3d"
+                    rotateX,
+                    rotateY,
+                    transformStyle: "preserve-3d",
                 }}
-                className='absolute max-sm:p-2 p-5 max-sm:inset-2 inset-4 flex flex-col gap-2 rounded-xl bg-white shadow-lg'
+                className='shadow-lg relative max-sm:h-51 max-sm:w-40 h-96 w-72 rounded-xl bg-[rgb(244,244,244,0.3)]'
             >
-                <div className=''>
-                    <h1 className='max-sm:text-[11px] text-xl bg-white rounded-xl font-bold max-sm:text-left text-center'>{title}</h1>
-                    <p className='max-sm:text-[9px] text-center'>{desc}</p>
-                </div>
+                <div 
+                    style={{
+                        transform: "translateZ(75px)",
+                        transformStyle: "preserve-3d"
+                    }}
+                    className='absolute max-sm:p-2 p-5 max-sm:inset-2 inset-4 flex flex-col gap-2 rounded-xl bg-white shadow-lg'
+                >
+                    <div className=''>
+                        <h1 className='max-sm:text-[11px] text-xl bg-white rounded-xl font-bold max-sm:text-left text-center'>{title}</h1>
+                        <p className='max-sm:text-[9px] text-center'>{desc}</p>
+                    </div>
 
-                <img src={img} alt="" className='rounded-b-lg border border-gray-300'/>
-            </div>
-        </motion.div>
+                    <img src={img} alt="" className='rounded-b-lg border border-gray-300'/>
+                </div>
+            </motion.div>
+        </Link>
     );
 }
