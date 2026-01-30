@@ -2,7 +2,6 @@ import {motion} from 'framer-motion'
 import { useParallaxRange } from '../useParallaxRange';
 import FloatDiv from '../FloatDiv';
 import Education from '../Education';
-import FloatImg from '../FloatImg';
 import Experience from '../Experience';
 
 const sectionHeight = 1200

@@ -1,7 +1,5 @@
 import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
-import Cursor from "../components/cursor";
 import { motion, useMotionValue, useMotionValueEvent } from "framer-motion";
-import { img } from "framer-motion/client";
 
 const imgs = [
     "/slide1.png",

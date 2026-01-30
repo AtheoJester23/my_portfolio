@@ -1,5 +1,4 @@
 import Cursor from "../components/cursor";
-import { ProjectItem } from "../components/ProjectsItem";
 
 const Test = () => {
     return (  

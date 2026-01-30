@@ -1,7 +1,7 @@
 import { motion, useMotionTemplate, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react';
 
-const Education = ({className, alt, src, start, end}: {className?: string, alt?: string, src?: string, start: number, end: number}) => {
+const Education = ({className, start, end}: {className?: string, start: number, end: number}) => {
     const ref = useRef(null)
     const {scrollYProgress} = useScroll({
         target: ref,

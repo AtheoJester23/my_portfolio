@@ -1,12 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
-import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import Navbar from './components/Navbar';
+import { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import Intro from './components/Intro';
-import { Carousel } from './pages/Carousel';
-import Cursor from './components/cursor';
 import Test from './pages/Test';
 
 function App() {
