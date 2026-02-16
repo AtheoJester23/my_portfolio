@@ -1,5 +1,6 @@
 import { motion, useMotionTemplate, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react';
+import resume from '../../public/Atheo Jester Baltazar Resume.pdf'
 
 const FloatImg = ({className, start, end}: {className?: string, start: number, end: number}) => {
     const ref = useRef(null)
@@ -28,7 +29,7 @@ const FloatImg = ({className, start, end}: {className?: string, start: number, e
             <p className="max-sm:text-[11px] text-2xl"><strong>Email:</strong> atheojester@gmail.com</p>
             <p className="max-sm:text-[11px] text-2xl"><strong>Age: </strong>23</p>
             <p className="max-sm:text-[11px] text-2xl"><strong>From: </strong>Bulacan, Philippines</p>
-            <button className="max-sm:text-[11px] bg-[rgb(23,23,23)] text-white font-bold max-sm:p-2 p-5 rounded w-full cursor-pointer text-2xl mt-2">Download CV</button>
+            <a href={resume} target='_blank' className="max-sm:text-[11px] bg-[rgb(23,23,23)] text-white font-bold max-sm:p-2 p-5 rounded w-full cursor-pointer text-2xl mt-2">View CV</a>
         </motion.div>
     )
 }
