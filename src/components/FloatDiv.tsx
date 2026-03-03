@@ -1,6 +1,6 @@
 import { motion, useMotionTemplate, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react';
-import resume from '../../public/Atheo Jester Baltazar Resume.pdf'
+import resume from '../../public/AtheoJester_Baltazar_Resume.pdf'
 
 const FloatImg = ({className, start, end}: {className?: string, start: number, end: number}) => {
     const ref = useRef(null)
