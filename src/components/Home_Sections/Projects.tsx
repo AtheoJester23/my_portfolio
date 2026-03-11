@@ -40,6 +40,9 @@ export const Projects = () => {
                 <div className="grid place-items-center">
                     <ProjectItem link="https://atheojester23.github.io/Tic-Tac-Toe/" title="Tic-Tac-Toe" desc="Game made purely out of Javascript, HTML, and CSS" img="/p9.png"/>
                 </div>
+                <div className="grid place-items-center">
+                    <ProjectItem link="https://jesterarts0.wordpress.com/" title="Jester Arts" desc="A website made out of wordpress about my arts" img="/p16.png"/>
+                </div>
             </div>
         </div>
     );
