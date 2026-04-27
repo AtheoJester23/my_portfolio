@@ -2,9 +2,9 @@ import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 import { motion, useMotionValue, useMotionValueEvent } from "framer-motion";
 
 const imgs = [
-    {img: '/slide1.png', link: 'https://atheojester23.github.io/GPSPetTrack_Download_WebPage/'},
-    {img: '/slide2.png', link: 'https://selfdevprog.vercel.app/'},
-    {img: '/slide3.png', link: 'https://typetype-ten.vercel.app/'},
+    {img: '/1.png', link: 'https://atheojester23.github.io/GPSPetTrack_Download_WebPage/'},
+    {img: '/2.png', link: 'https://selfdevprog.vercel.app/'},
+    {img: '/3.png', link: 'https://typetype-ten.vercel.app/'},
 ]
 
 const DRAG_BUFFER = 50
