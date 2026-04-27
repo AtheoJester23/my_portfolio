@@ -11,6 +11,9 @@ export const Projects = () => {
                     <ProjectItem link="https://github.com/AtheoJester23/GPS_Device" title="GPS Device" desc="GPS Device I made for our thesis" img="/p11.png"/>
                 </div>
                 <div className="grid place-items-center">
+                    <ProjectItem link="https://projectplu.vercel.app/" title="PLU system" desc="A Price Look-Up (PLU) system" img="/2e08e5c7-6278-419c-886a-ba65df42b9be.png"/>
+                </div>
+                <div className="grid place-items-center">
                     <ProjectItem link="https://atheojester23.github.io/GPSPetTrack_Download_WebPage/" title="App Download Page" desc="A download page made for our mobile app in our thesis" img="/p10.png"/>
                 </div>
                 <div className="grid place-items-center">
